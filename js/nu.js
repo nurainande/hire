@@ -3,7 +3,7 @@
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 100);
+  header.classList.toggle("sticky", window.scrollY > 30);
 });
 
 let menu = document.querySelector("#menu-icon");
@@ -16,8 +16,12 @@ menu.onclick = () => {
 
 window.onscroll = function () {
   menu.classList.remove("fa-times");
-  navList.classList.remove("open");
+  // navList.classList.remove("open");
 };
+
+
+
+//FAQ SECTION
 
 const faqs = document.querySelectorAll(".faq");
 
@@ -26,6 +30,7 @@ faqs.forEach((faq) => {
     faq.classList.toggle("active");
   });
 });
+
 
 //testimonial section
 
