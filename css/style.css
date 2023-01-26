@@ -242,7 +242,9 @@ header {
   text-align: center;
 }
 
-/* ----testimonial------ */
+
+/* testimonial new */
+
 .testimonial {
   background: var(--backgroud-color);
   padding-top: 3rem;
@@ -262,48 +264,99 @@ header {
   font-size: 2rem;
 }
 
-.testimonial .container .slide-container {
-  overflow: hidden;
-}
-.testimonial .container .box {
-  background: white;
-  padding: 1rem;
+
+/* Slideshow container */
+.slideshow-container {
   position: relative;
-  text-align: center;
+  /* background: #f1f1f1f1; */
+  background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.testimonial .container .box .user {
-  padding: 2rem;
-}
-.testimonial .container .box .user img {
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-}
-.testimonial .container .box .user h3 {
-  font-size: 2rem;
-  color: var(--pink);
-}
-.testimonial .container .box .user .stars {
-  color: var(--main-color);
-  font-size: 3rem;
-  margin: 2rem 0;
-}
-.testimonial .container .box .user .comment {
-  font-size: 1.3rem;
-  color: #666;
-  padding: 1rem 0;
+/* Slides */
+.mySlides {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  text-align: center;
+  border-radius: 30px;
 }
 
-#made {
-  color: var(--white-color);
-  height: 40px;
-  width: 40px;
-  background: var(--main-color);
-  padding: 1rem;
+.mySlides img{
+  width: 20%;
+  margin: auto;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
+.mySlides q{
+  font-size: 1.5rem;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color:var(--comp-color);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: var(--main-color);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: var(--comp-color);
+}
+
+/* Add an italic font style to all quotes */
+/* q {font-style: italic;} */
+
+/* Add a blue color to the author */
+.author {
+  color: var(--comp-color);
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+
 
 /* ------faq -------*/
 .faq-sec {
@@ -642,6 +695,7 @@ form textarea {
 .find-box {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  border-radius: 1rem;
 }
 .find-image {
   width: 100%;
@@ -737,6 +791,14 @@ form textarea {
   .two span {
     color: var(--black-color);
   }
+
+  .mySlides img{
+    width: 30%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
   .contact {
     grid-template-columns: 1fr;
   }
@@ -793,6 +855,25 @@ form textarea {
     font-size: 2.5rem;
   }
 
+  .mySlides {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+  }
+
+
+  .mySlides img{
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+
   .get {
     padding-top: 7rem;
     background: var(--backgroud-color);
@@ -847,3 +928,17 @@ form textarea {
     color: var(--black-color);
   }
 }
+
+
+@media screen and (max-width: 500px){
+  .mySlides {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+  }
+}
+

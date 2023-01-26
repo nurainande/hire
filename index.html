@@ -154,100 +154,53 @@
 
 
 
-    <!-- ----testimonial---- -->
-    <section class="testimonial">
+     <!-- ----new testimonial---- -->
+     <section class="testimonial">
+
       <div class="head">
         <h1 class="heading">Testimonial</h1>
         <h2 class="heading-2">What people are saying about hireexpert</h2>
       </div>
 
-      <div class="container swiper">
+          <div class="slideshow-container">
 
-        <div class="slide-container">
-          <div class="box-wrapper swiper-wrapper">
+<div class="mySlides">
+  <div class="test-img">
+    <img src="./image/pic1.png" alt="">
+  </div>
+  <q>I totally recommend the Hireexpert app, I was stranded by 9pm on the highway when my vehicle broke down, I requested for a Mechanic expert and he showed up in less than 27 minutes and charged just a stipend.</q>
+  <p class="author">- Anita</p>
+</div>
 
-            <div class="box swiper-slide">
-              <div class="user">
-                <img src="./image/pic1.png" alt="" />
-                <h3>Anita</h3>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="comment">
-                  I totally recommend the Hireexpert app, I was stranded by 9pm on the highway when my vehicle broke down, I requested for a Mechanic expert and he showed up in less than 27 minutes and charged just a stipend.
-                </div>
-              </div>
-            </div>
+<div class="mySlides">
+  <div class="test-img">
+    <img src="./image/pic2.png" alt="">
+  </div>
+  <q>I recently moved into this my new apartment and found out that a wide portion of the tiles in the kitchen was damaged, the Hireexpert app helped me get an tiler even when I didn’t know anyone in the neighborhood</q>
+  <p class="author">- Micheal</p>
+</div>
 
-    
-            
-            <div class="box swiper-slide">
-              <div class="user">
-                <img src="./image/pic2.png" alt="" />
-                <h3>Patrick</h3>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="comment">
-                  Thanks to the hireexpert application,I was able to get a professional photographer to cover my birthday party, this application is a must use for everyone 
-                </div>
-              </div>
-            </div>
+<div class="mySlides">
+  <div class="test-img">
+    <img src="./image/pic3.png" alt="">
+  </div>
+  <q>I got my current car washer from hireexpert, he comes twice weekly and only charges a very low fee. Thank you hireexpert</q>
+  <p class="author">- Amanda</p>
+</div>
 
-            <div class="box swiper-slide">
-              <div class="user">
-                <img src="./image/pic1.png" alt="" />
-                <h3>Micheal</h3>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="comment">
-                  I recently moved into this my new apartment and found out that a wide portion of the tiles in the kitchen was damaged, the Hireexpert app helped me get an tiler even when I didn’t know anyone in the neighborhood 
-                </div>
-              </div>
-            </div>
-            
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
 
-            <div class="box swiper-slide">
-              <div class="user">
-                <img src="./image/pic3.png" alt="" />
-                <h3>Amanda</h3>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="comment">
-                  I got my current car washer from hireexpert, he comes twice weekly and only charges a very low fee. Thank you hireexpert
-                </div>
-              </div>
+             </div>
 
-          </div>
-        </div>
-
-        <!-- ---------------- -->
-        <div class="swiper-button-next swiper-navBtn" id="made"></div>
-        <div class="swiper-button-prev swiper-navBtn" id="made"></div>
-        <div class="swiper-pagination"></div>
-         
-        <!-- ------------------------ --> 
-      </div>
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 
     </section>
+
 
 
 
@@ -294,7 +247,7 @@
 
         <div class="answer">
           <p>
-            The wrkman app is totally free to download on all platforms.
+            The hireexpert app is totally free to download on all platforms.
             Register and find your next client or provider today for ZERO cost!
             Download wrkman now
           </p>
@@ -317,7 +270,7 @@
 
         <div class="answer">
           <p>
-            Everyday wrkman keeps on improving security measures in other to
+            Everyday hireexpert keeps on improving security measures in other to
             make the platform as safe as can be for all our customers. Your
             safety and satisfaction is our top priority.
           </p>
@@ -340,7 +293,7 @@
 
         <div class="answer">
           <p>
-            No, wrkman protects your privacy and does not disclose it to any 3rd
+            No, hireexpert protects your privacy and does not disclose it to any 3rd
             party without your full consent . However, when trust is built,
             users are free to disclose their location on their own discretion
           </p>
@@ -446,5 +399,33 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/nu.js"></script>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+ let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
   </body>
 </html>
