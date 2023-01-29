@@ -617,14 +617,16 @@ form textarea {
   text-align: center;
 }
 .blog .blog-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
   gap: 3rem;
   margin: 20px 0;
   padding-bottom: 5rem;
   flex-wrap: wrap;
 }
 .blog-container .blog-box {
+  width: 70%;
+  margin: auto;
   background: #ffffff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -639,14 +641,14 @@ form textarea {
   object-fit: cover;
   object-position: center;
 }
-.blog-container .blog-box .blog-text .blog-date {
+.blog-date {
   display: block;
 }
-.blog-container .blog-box .blog-text .blog-title {
-  font-size: 1.5rem;
+.blog-title {
+  font-size: 1.8rem;
 }
-.blog-container .blog-box .blog-text .blog-word {
-  font-size: 1.3rem;
+.blog-word {
+  font-size: 2.3rem;
 }
 .blog-btn {
   display: inline-block;
@@ -654,6 +656,11 @@ form textarea {
   padding: 1rem;
   color: var(--white-color);
   margin-top: 1rem;
+}
+
+.blog-container .readblog-text{
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 /* dpt */
@@ -812,9 +819,11 @@ form textarea {
     font-size: 2.5rem;
   }
 
-  .blog .blog-container {
-    grid-template-columns: 1fr;
-    flex-wrap: wrap;
+  .blog-title {
+    font-size: 1.5rem;
+  }
+  .blog-word {
+    font-size: 2rem;
   }
 }
 
@@ -898,6 +907,11 @@ form textarea {
     color: rgb(57, 56, 56);
   }
 
+  .blog-container .blog-box {
+    width: 100%;
+    margin: auto;
+  }
+
   .find-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -939,6 +953,10 @@ form textarea {
     justify-content: center;
     padding: 50px;
     text-align: center;
+  }
+
+  .blog-word {
+    font-size: 1.8rem;
   }
 }
 
